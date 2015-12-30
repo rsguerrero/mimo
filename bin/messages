@@ -1,0 +1,41 @@
+error.format=Actualmente esta API solo devuelve los resultados en los formato json y xml
+error.paginacion=Los parámetros pasados como número de página y como página incial deben ser números enteros
+error.api=El formato enviado para la API no es correcto
+error.api.inexistente=El API no existe
+error.opinion=El formato enviado para la opinion no es correcto
+error.usuario=El formato enviado para el usuario no es correcto
+error.required=El campo es requerido
+error.formato.api=El formato enviado no es soportado por ningún Api
+error.formato.url=El campo url no tiene el formato correcto
+error.obligatorio.descripcion=El campo descripcion es obligatorio
+error.obligatorio.tematica=El campo tematica es obligatorio
+error.obligatorio.url=El campo url es obligatorio
+error.obligatorio.formatosRespuesta=El campo formatosRespuesta es obligatorio
+error.obligatorio.gratis=El campo gratis es obligatorio
+error.obligatorio.precioMes=El campo precioMes es obligatorio
+error.obligatorio.xml=El campo xml es obligatorio
+error.obligatorio.json=El campo json es obligatorio
+error.obligatorio.html=El campo html es obligatorio
+error.obligatorio.text=El campo text es obligatorio
+error.obligatorio.bytes=El campo bytes es obligatorio
+error.obligatorio.api=El campo api es obligatorio
+error.obligatorio.usuario=El campo usuario es obligatorio
+error.obligatorio.puntuacion=El campo puntuacion es obligatorio
+error.obligatorio.facilManejo=El campo facilManejo es obligatorio
+error.obligatorio.rapidezRespuesta=El campo rapidezRespuesta es obligatorio
+error.obligatorio.nick=El campo nick es obligatorio
+error.obligatorio.password=El campo paswword es obligatorio
+error.password.incorrecta=La contraseña enviada no es correcta
+error.nick.existente=Ya existe un usuario con ese nick
+error.password.min=La contraseña debe tener como minimo 8 caracteres
+error.password.max=La contraseña debe tener como maximo 12 caracteres
+error.descripcion.max=La descripcion como maximo puede tener 100 caracteres
+error.tematica.max=La tematica como maximo puede tener 30 caracteres
+error.precioMes.min=El precioMes como minimo debe ser 0
+error.puntuacion.min=La puntuacion como minimo debe ser 0
+error.puntuacion.max=La puntuacion como maximo puede ser 10
+error.usuario.inexistente=El usuario con el que intenta crear la opinion no existe
+error.api.inexistente=La api para la que intenta crear la opinion no existe
+
+
+

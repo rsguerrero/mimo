@@ -1,0 +1,9 @@
+@(opiniones: List[Opinion], totalRegistros: Integer)
+<Apis>
+	<total>@totalRegistros</total>
+	<datos>
+		@for(o <- opiniones) {
+			@_opinion(o)
+		}
+	</datos>
+</Apis>

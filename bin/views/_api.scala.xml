@@ -1,0 +1,19 @@
+@(api: Api)
+<api id="@api.id">
+	<tematica>@api.getTematica()</tematica>
+	<descripcion>@api.getDescripcion()</descripcion>
+	<url>@api.getUrl()</url>
+	<xml>@api.isXml()</xml>
+	<html>@api.isHtml</html>
+	<json>@api.isJson</json>
+	<text>@api.isText</text>
+	<bytes>@api.isBytes</bytes>
+	<gratis>@api.isGratis()</gratis>
+	<precioMes>@api.getPrecioMes()</precioMes>
+	<puntuacionMedia>@api.getPuntuacionMedia()</puntuacionMedia>
+	<opiniones>
+		@for(o <- api.getOpiniones()) {
+				@_opinion(o)
+		}
+	</opiniones>
+</api>

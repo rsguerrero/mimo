@@ -1,0 +1,4 @@
+@(usuario: Usuario)
+<usuario id="@usuario.id">
+	<nick>@usuario.getNick()</nick>
+</usuario>

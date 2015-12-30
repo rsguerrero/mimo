@@ -1,0 +1,37 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+#INICIO aqui hay que meter todas las llamadas a los recursos de la API
+
+#peticiones get
+
+GET     /api/informacion/$id<[0-9]*>                 controllers.Apis.informacionAPI(id: Long)
+GET     /apis/listado               				 controllers.Apis.listado()
+GET     /apis/tematica/$tematica<[a-z]*>             controllers.Apis.listadoTematica(tematica : String)
+GET     /apis/formato/$formato<[a-z]*>               controllers.Apis.listadoFormato(formato : String)
+GET     /apis/gratis                  				 controllers.Apis.listadoGratis()
+GET     /apis/nota/$nota<[0-9]{1}>                   controllers.Apis.listadoNota(nota : Integer)
+
+
+GET     /api/opiniones/$id<[0-9]*>                   controllers.Opiniones.listadoOpinionesApi(id: Long)
+GET     /usuario/opiniones/$id<[0-9]*>               controllers.Opiniones.listadoOpinionesUsuario(id: Long)
+
+#peticiones post
+POST    /api                              		 	 controllers.Apis.crearAPI()
+POST    /usuario        						 	 controllers.Usuarios.crearUsuario()
+POST    /opinion        				   		 	 controllers.Opiniones.crearOpinion()
+
+#peticiones delete
+DELETE /api/$id<[0-9]*>                 			 controllers.Apis.borrarAPI(id: Long)
+DELETE /usuario/$id<[0-9]*>           		 		 controllers.Usuarios.borrarUsuario(id: Long)
+DELETE /opinion/$id<[0-9]*>                 		 controllers.Opiniones.borrarOpinion(id: Long)
+
+#FIN aqui hay que meter todas las llamadas a los recursos de la API
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

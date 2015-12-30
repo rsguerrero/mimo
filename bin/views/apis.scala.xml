@@ -1,0 +1,9 @@
+@(listaApis: List[Api], totalRegistros: Integer)
+<Apis>
+	<total>@totalRegistros</total>
+	<datos>
+		@for(a <- listaApis) {
+			@_api(a)
+		}
+	</datos>
+</Apis>

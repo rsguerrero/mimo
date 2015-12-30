@@ -1,0 +1,10 @@
+@(opinion: Opinion)
+<opinion id="@opinion.id">
+	<api>@opinion.getApi().id</api>
+	<usuario>@opinion.getUsuario().id</usuario>
+	<puntuacion>@opinion.getPuntuacion()</puntuacion>
+	<facilManejo>@opinion.isFacilManejo()</facilManejo>
+	<rapidezRespuesta>@opinion.isRapidezRespuesta()</rapidezRespuesta>
+	<ventajas>@opinion.getVentajas()</ventajas>
+	<inconvenientes>@opinion.getInconvenientes()</inconvenientes>
+</opinion>
